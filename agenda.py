@@ -29,4 +29,12 @@ if(opc==3):
             agenda[i][0]=nvc
             os.system('cls')
             break  
+if(opc==4):
+    nome=input("\nInforme o nome do contato que deseja excluir:")
+    for i in range(len(agenda)):
+        if(agenda[i][0]==nome):
+            agenda.remove(nome)
+            agenda.pop(0)
+            print(agenda)
+
    
