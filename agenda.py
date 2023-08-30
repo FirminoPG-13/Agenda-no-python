@@ -18,5 +18,15 @@ if (opc == 1):
     print("Novo contato adicionado:",nvcntt[0]," | ",nvcntt[1])
 if (opc == 2):
     for nvcntt in agenda:
-        print("\nNome:",nvcntt[0],"Telefone",nvnome[1],"\n")    
+        print("\nNome:",nvcntt[0],"Telefone",nvcntt[1],"\n")  
+if(opc==3):
+    nome=input("\nDigite o nome do contato a editar:")
+    for i in range(len(agenda)):
+        if(agenda[i][0]==nome):
+            nvnome=input("Digite o novo nome do contato")
+            nvc=input("Digite o novo telefone do contato")
+            agenda[i][0]=nvnome
+            agenda[i][0]=nvc
+            os.system('cls')
+            break  
    
